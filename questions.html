@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="shortcut icon" href="images/cpny_logo.PNG" type="image/x-icon">
+    <link rel="stylesheet" href="post-modal.css">
+    <title>Questions | Rhizone</title>
+
+    <style>
+        body {
+            background-color: #eee
+        }
+
+        .time {
+            font-size: 9px !important
+        }
+
+        .socials i {
+            margin-right: 14px;
+            font-size: 17px;
+            color: #d2c8c8;
+            cursor: pointer
+        }
+
+        .feed-image img {
+            width: 100%;
+            height: auto
+        }
+
+        .icon-link {
+            display: inline-flex;
+            align-items: center;
+            color: inherit;
+            /* Ensures the icon inherits the color from the parent */
+            text-decoration: none;
+            /* Removes any default underline from the link */
+        }
+
+        .comment-count {
+            display: inline-flex;
+            align-items: center;
+            margin-right: 8px;
+            /* Adjust as necessary to match spacing */
+            color: inherit;
+            /* Ensures the text inherits the color from the parent */
+            font-size: 0.875rem;
+            /* Adjust as necessary to match font size */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container mt-4 mb-5">
+        <div class="d-flex justify-content-center row">
+            <div class="col-md-8">
+                <div class="feed p-2">
+                    <div class="d-flex flex-row justify-content-between align-items-center p-2 bg-white border">
+                        <div class="feed-text px-2">
+                            <h6 class="text-black-50 mt-2">What's on your mind. Ask the community</h6>
+                        </div>
+                        <button type="button" class="btn btn-success" data-toggle="modal"
+                            data-target="#postModal">Ask</button>
+                        <div class="feed-icon px-2"><i class="fa fa-long-arrow-up text-black-50"></i></div>
+                    </div>
+
+                    <!-- First Post -->
+                    <div class="bg-white border mt-2">
+
+                        <!-- User Profile -->
+                        <div>
+                            <div class="d-flex flex-row justify-content-between align-items-center p-2 border-bottom">
+                                <div class="d-flex flex-row align-items-center feed-text px-2"><img
+                                        class="rounded-circle" src="https://i.imgur.com/aoKusnD.jpg" width="45">
+                                    <div class="d-flex flex-column flex-wrap ml-2"><span
+                                            class="font-weight-bold">Thomson ben</span><span
+                                            class="text-black-50 time">40 minutes ago</span></div>
+                                </div>
+                                <div class="feed-icon px-2"><i class="fa fa-ellipsis-v text-black-50"></i></div>
+                            </div>
+                        </div>
+
+                        <!-- Post Body -->
+                        <div class="p-2 px-3"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.</span></div>
+
+                        <!-- Comments, shares, and like -->
+                        <div class="d-flex justify-content-end socials p-2 py-3">
+                            <span class="comment-count">2.5k</span>
+                            <a href="question-comments.html" class="icon-link">
+                                <i class="fa fa-comments-o"></i>
+                            </a>
+                            <i class="fa fa-share"></i>
+                        </div>
+                    </div>
+
+                    <!-- Second Post -->
+                    <div class="bg-white border mt-2">
+
+                        <!-- User Profile -->
+                        <div>
+                            <div class="d-flex flex-row justify-content-between align-items-center p-2 border-bottom">
+                                <div class="d-flex flex-row align-items-center feed-text px-2"><img
+                                        class="rounded-circle" src="https://i.imgur.com/aoKusnD.jpg" width="45">
+                                    <div class="d-flex flex-column flex-wrap ml-2"><span
+                                            class="font-weight-bold">Thomson ben</span><span
+                                            class="text-black-50 time">40 minutes ago</span></div>
+                                </div>
+                                <div class="feed-icon px-2"><i class="fa fa-ellipsis-v text-black-50"></i></div>
+                            </div>
+                        </div>
+
+                        <!-- Post Body -->
+                        <div class="feed-image p-2 px-3">
+                            <div class="pb-3"><span>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                    consequat.</span>
+                            </div>
+                            <img class="img-fluid img-responsive" src="https://i.imgur.com/aoKusnD.jpg">
+                        </div>
+
+                        <!-- Comments, shares, and likes -->
+                        <div class="d-flex justify-content-end socials p-2 py-3">
+                            <span class="comment-count">1.3k</span>
+                            <a href="question-comments.html" class="icon-link">
+                                <i class="fa fa-comments-o"></i>
+                            </a>
+                            <i class="fa fa-share"></i>
+                        </div>
+                    </div> <!-- End of Second Post  -->
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Post Modal -->
+    <div class="modal fade" id="postModal" tabindex="-1" role="dialog" aria-labelledby="postModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="postModalLabel">Ask Your Question</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row d-flex justify-content-center">
+                        <div class="card">
+                            <div class="row px-3">
+                                <img class="profile-pic mr-3" src="https://i.imgur.com/6tPhTUn.jpg">
+                                <div class="flex-column">
+                                    <h3 class="mb-0 font-weight-normal">Camilla Perez</h3>
+                                    <select name="privacy" class="privacy">
+                                        <option>Public post</option>
+                                        <!-- <option>Private post</option> -->
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row px-3 form-group">
+                                <textarea class="text-muted bg-light mt-4 mb-3"
+                                    placeholder="Hi Camilla, what's on your mind today?"></textarea>
+                            </div>
+                            <div class="row px-3">
+                                <p class="fa fa-user options mb-0 mr-4"></p>
+                                <p class="fa fa-map-marker options mb-0 mr-4"></p>
+                                <p class="fa fa-image options mb-0 mr-4"></p>
+                                <img class="options" src="https://img.icons8.com/material/24/000000/more--v2.png"
+                                    width="30px" height="28px">
+                                <div class="btn btn-success ml-auto">Post</div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

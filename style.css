@@ -1,0 +1,38 @@
+.nav-btn {
+    border-radius: 50px !important;
+    padding: 5px 30px !important;
+    background-color: #32CD32 !important;
+}
+
+body::before {
+    display: block;
+    content: '';
+    height: 60px;
+}
+
+section {
+    margin-bottom: 3rem;
+}
+
+@media(max-width: 992px) {
+    .nav-btn {
+        width: 30%;
+        margin-bottom: 10px;
+    }
+}
+
+.section-1 {
+    background-color: #F0F8FF !important;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.display-btn {
+    background-color: #32CD32 !important;
+}
+
+@media(min-width: 768px) {
+    .news-input {
+        width: 50%;
+    }
+}
